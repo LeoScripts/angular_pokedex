@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 20vh;
+    box-sizing: content-box;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .search {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border: 0.1rem solid #7e3ff9;
+    border-radius: 0.8rem;
+
+    label {
+      color: #7e3ff9;
+    }
+
+    input {
+      border-style: none;
+      outline: none;
+    }
+  }
+}
