@@ -1,0 +1,24 @@
+footer {
+  background: #7e3ff9;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  padding: 2rem 0;
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    border: #7e3ff9 0.3rem solid;
+    border-radius: 0.8rem;
+    padding: 1rem;
+  }
+
+  a:hover {
+    color: #fee;
+    background-color: #874dfa;
+    border: #9d6dfc 0.3rem solid;
+  }
+}
