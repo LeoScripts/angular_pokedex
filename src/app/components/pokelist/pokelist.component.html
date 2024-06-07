@@ -1,6 +1,3 @@
 <section class="list">
-  <app-pokecard />
-  <app-pokecard />
-  <app-pokecard />
-  <app-pokecard />
+  <app-pokecard *ngFor="let poke of pokes" [poke]="poke"></app-pokecard>
 </section>

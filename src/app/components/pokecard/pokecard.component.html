@@ -1,14 +1,15 @@
 <div class="pokecard">
-  <span class="pokecard__number">Nº 002</span>
-  <img
-    class="pokecard__image"
-    src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/153.png"
-    alt="poke"
-  />
+  <span class="pokecard__number">Nº{{ addZero(poke.id, 3) }}</span>
+  <img class="pokecard__image" [src]="poke.img" alt="{{ poke.name }}" />
 
-  <h4 class="pokecard__name">Poke</h4>
+  <h4 class="pokecard__name">{{ poke.name }}</h4>
   <div class="pokecard__types">
-    <p class="pokecard__types--type pokecard__types--type__dragon">grass</p>
-    <p class="pokecard__types--type pokecard__types--type__grass">poison</p>
+    <p
+      class="pokecard__types--type"
+      *ngFor="let type of poke.types"
+      [class]="'pokecard__types--type__' + type"
+    >
+      {{ type }}
+    </p>
   </div>
 </div>
