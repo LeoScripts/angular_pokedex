@@ -30,7 +30,6 @@ export class PokeService {
           img: result.sprites.other.dream_world.front_default,
           types: result.types.map((v: any) => v.type.name),
         };
-
         this.pokes[result.id] = poke;
       });
   }
