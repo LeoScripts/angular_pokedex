@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PokecardComponent } from '../pokecard/pokecard.component';
 import { CommonModule } from '@angular/common';
+import { PokeService } from '../../poke.service';
 
 @Component({
   selector: 'app-pokelist',
@@ -10,26 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './pokelist.component.scss',
 })
 export class PokelistComponent {
-  pokes: Poke[] = [
-    {
-      id: 1,
-      img: 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/153.png',
-      name: 'tiranosauro rex',
-      types: [Type.dragon, Type.poison],
-    },
-    {
-      id: 1,
-      img: 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/153.png',
-      name: 'tiranosauro rex',
-      types: [Type.dragon, Type.poison],
-    },
-    {
-      id: 1,
-      img: 'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/153.png',
-      name: 'tiranosauro rex',
-      types: [Type.dragon, Type.poison],
-    },
-  ];
+  constructor(public pokeService: PokeService) {}
 }
 
 export interface Poke {

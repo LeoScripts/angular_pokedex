@@ -1,4 +1,4 @@
-<div class="pokecard">
+<div class="pokecard" *ngIf="poke">
   <span class="pokecard__number">Nº{{ addZero(poke.id, 3) }}</span>
   <img class="pokecard__image" [src]="poke.img" alt="{{ poke.name }}" />
 
