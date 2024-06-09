@@ -1,6 +1,6 @@
 <section class="list">
   <app-pokecard
-    *ngFor="let poke of pokeService.pokes"
+    *ngFor="let poke of pokeService.pokes; index as i"
     [poke]="poke"
   ></app-pokecard>
 </section>

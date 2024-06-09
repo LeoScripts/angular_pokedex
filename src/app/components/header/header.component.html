@@ -5,6 +5,12 @@
 
   <div class="search">
     <label for="search_poke">buscar</label>
-    <input type="search" name="search_poke" id="search_poke" />
+    <input
+      type="search"
+      name="search_poke"
+      id="search_poke"
+      placeholder="teste"
+      (input)="onInput($event)"
+    />
   </div>
 </header>

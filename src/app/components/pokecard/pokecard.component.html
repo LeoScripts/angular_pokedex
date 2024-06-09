@@ -1,17 +1,19 @@
 <div class="pokecard" *ngIf="poke">
   <span class="pokecard__number">Nº{{ addZero(poke.id, 3) }}</span>
-  <img class="pokecard__image" [src]="poke.img" alt="{{ poke.name }}" />
+  <img
+    class="pokecard__image"
+    [src]="poke.sprites.other.dream_world.front_default"
+    alt="{{ poke.name }}"
+  />
 
   <h4 class="pokecard__name">{{ poke.name }}</h4>
   <div class="pokecard__types">
     <p
       class="pokecard__types--type"
-      *ngFor="let type of poke.types"
-      [class]="'pokecard__types--type__' + type"
+      *ngFor="let t of poke.types"
+      [class]="'pokecard__types--type__' + t.type.name"
     >
-      {{ type }}
+      {{ t.type.name }}
     </p>
   </div>
 </div>
-
-<ng-template style="display: none" #elseBlock></ng-template>
