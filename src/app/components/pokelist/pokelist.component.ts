@@ -12,6 +12,14 @@ import { PokeService } from '../../poke.service';
 })
 export class PokelistComponent {
   constructor(public pokeService: PokeService) {}
+
+  prevPage() {
+    // prev();
+  }
+
+  nextPage() {
+    // next();
+  }
 }
 
 export interface Poke {
