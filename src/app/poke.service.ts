@@ -49,7 +49,7 @@ export class PokeService {
   }
 
   nextPage() {
-    if (offset === 1020) return;
+    if (offset == 1024) return;
     offset = offset + limit;
     this.getPokes(offset + 1);
     this.returnTop();
