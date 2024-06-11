@@ -1,8 +1,16 @@
 <div class="pokecard" *ngIf="poke">
   <span class="pokecard__number">Nº{{ addZero(poke.id, 3) }}</span>
   <img
+    *ngIf="poke.id < 650"
     class="pokecard__image"
     [src]="poke.sprites.other.dream_world.front_default"
+    alt="{{ poke.name }}"
+  />
+
+  <img
+    *ngIf="poke.id > 649"
+    class="pokecard__image"
+    [src]="poke.sprites.front_default"
     alt="{{ poke.name }}"
   />
 

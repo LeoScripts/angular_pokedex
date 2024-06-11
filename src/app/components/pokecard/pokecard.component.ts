@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Poke } from '../pokelist/pokelist.component';
+import { IPoke } from '../pokelist/pokelist.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './pokecard.component.scss',
 })
 export class PokecardComponent {
-  @Input() poke: Poke | any;
+  @Input() poke: IPoke | any;
 
   public addZero(str: string | number, size: number): string {
     let s = String(str);

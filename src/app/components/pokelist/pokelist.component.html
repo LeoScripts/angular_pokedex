@@ -3,8 +3,6 @@
     *ngFor="let poke of pokeService.pokes; index as i"
     [poke]="poke"
   ></app-pokecard>
-  <section>
-    <button (click)="prevPage()">prev page</button>
-    <button (click)="nextPage()">next page</button>
-  </section>
 </section>
+
+<app-paginate></app-paginate>

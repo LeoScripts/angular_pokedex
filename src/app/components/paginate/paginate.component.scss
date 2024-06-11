@@ -1,0 +1,25 @@
+.paginate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--button {
+    width: 5rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    background: #eee;
+    border: none;
+    border-radius: 1rem;
+    color: #000;
+    font-weight: 600;
+    transform: translateY(1.1);
+
+    &__image {
+      width: 90%;
+    }
+  }
+
+  &--button:hover {
+    background: #7d3ff934;
+  }
+}

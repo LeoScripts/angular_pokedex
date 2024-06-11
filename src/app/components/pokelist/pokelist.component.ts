@@ -2,31 +2,26 @@ import { Component } from '@angular/core';
 import { PokecardComponent } from '../pokecard/pokecard.component';
 import { CommonModule } from '@angular/common';
 import { PokeService } from '../../poke.service';
+import { PaginateComponent } from '../paginate/paginate.component';
 
 @Component({
   selector: 'app-pokelist',
   standalone: true,
-  imports: [CommonModule, PokecardComponent],
+  imports: [CommonModule, PokecardComponent, PaginateComponent],
   templateUrl: './pokelist.component.html',
   styleUrl: './pokelist.component.scss',
 })
 export class PokelistComponent {
   constructor(public pokeService: PokeService) {}
-
-  prevPage() {
-    // prev();
-  }
-
-  nextPage() {
-    // next();
-  }
 }
 
-export interface Poke {
+export interface IPoke {
   id: number;
   name: string;
   img: string;
   types: Type[];
+  nextPage: string;
+  prevPage: string;
 }
 
 enum Type {
