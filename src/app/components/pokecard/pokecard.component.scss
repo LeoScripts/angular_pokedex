@@ -44,115 +44,119 @@
     &--type {
       padding: 0.25rem 0.5rem;
       border-radius: 0.5rem;
+      width: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &__bug {
         background: linear-gradient(
-          90deg,
-          rgba(85, 120, 46, 1) 0%,
-          rgba(114, 159, 63, 1) 100%
+          180deg,
+          rgba(85, 120, 46, 1) 50%,
+          rgba(114, 159, 63, 1) 50%
         );
         background-color: #729f3f;
         color: #fff;
       }
 
       &__dark {
-        background: linear-gradient(180deg, #707070 0%, #707070 100%);
+        background: linear-gradient(180deg, #707070 50%, #707070 50%);
         background-color: #707070;
         color: #fff;
       }
 
       &__dragon {
-        background: linear-gradient(135deg, #53a4cf 0%, #f16e57 100%);
+        background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
         background-color: #53a4cf;
         color: #fff;
       }
 
       &__electric {
-        background: linear-gradient(135deg, #eed535 0%, #eed535 100%);
+        background: linear-gradient(180deg, #eed535 50%, #eed535 50%);
         background-color: #eed535;
         color: #212121;
       }
 
       &__fairy {
-        background: linear-gradient(135deg, #fdb9e9 0%, #fdb9e9 100%);
+        background: linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
         background-color: #fdb9e9;
         color: #212121;
       }
 
       &__fighting {
-        background: linear-gradient(135deg, #d56723 0%, #d56723 100%);
+        background: linear-gradient(180deg, #d56723 50%, #d56723 50%);
         background-color: #d56723;
         color: #fff;
       }
 
       &__fire {
-        background: linear-gradient(135deg, #fd7d24 0%, #fd7d24 100%);
+        background: linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
         background-color: #fd7d24;
         color: #fff;
       }
 
       &__flying {
-        background: linear-gradient(135deg, #3dc7ef 0%, #bdb9b8 100%);
+        background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
         background-color: #3dc7ef;
         color: #212121;
       }
 
       &__ghost {
-        background: linear-gradient(135deg, #7b62a3 0%, #7b62a3 100%);
+        background: linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
         background-color: #7b62a3;
         color: #fff;
       }
 
       &__grass {
-        background: linear-gradient(135deg, #9bcc50 0%, #9bcc50 100%);
+        background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
         background-color: #9bcc50;
         color: #212121;
       }
 
       &__ground {
-        background: linear-gradient(135deg, #f7de3f 0%, #ab9842 100%);
+        background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
         background-color: #f7de3f;
         color: #212121;
       }
 
       &__ice {
-        background: linear-gradient(135deg, #51c4e7 0%, #51c4e7 100%);
+        background: linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
         background-color: #51c4e7;
         color: #212121;
       }
 
       &__normal {
-        background: linear-gradient(135deg, #a4acaf 0%, #a4acaf 100%);
+        background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
         background-color: #a4acaf;
         color: #212121;
       }
 
       &__poison {
-        background: linear-gradient(135deg, #b97fc9 0%, #b97fc9 100%);
+        background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
         background-color: #b97fc9;
         color: #fff;
       }
 
       &__psychic {
-        background: linear-gradient(135deg, #f366b9 0%, #f366b9 100%);
+        background: linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
         background-color: #f366b9;
         color: #fff;
       }
 
       &__rock {
-        background: linear-gradient(135deg, #a38c21 0%, #a38c21 100%);
+        background: linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
         background-color: #a38c21;
         color: #fff;
       }
 
       &__steel {
-        background: linear-gradient(135deg, #9eb7b8 0%, #9eb7b8 100%);
+        background: linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
         background-color: #9eb7b8;
         color: #212121;
       }
 
       &__water {
-        background: linear-gradient(135deg, #4592c4 0%, #4592c4 100%);
+        background: linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
         background-color: #4592c4;
         color: #fff;
       }
