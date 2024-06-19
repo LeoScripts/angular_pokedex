@@ -26,9 +26,8 @@ export class PokeService {
 
   async getPokes(offset: number) {
     let data: any = [];
-    const response = await this.fetchPokeApi(baseUrl + paginate);
-    offset == 0 && (offset = 1);
-    for (let i = offset; i < response.results.length + offset; i++) {
+    offset === 0 && (offset = 1);
+    for (let i = offset; i < limit + offset; i++) {
       data.push(await this.fetchPokeApi(`${baseUrl}/${i}`));
     }
     this.pokes = data;
